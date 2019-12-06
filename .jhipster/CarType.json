@@ -1,0 +1,60 @@
+{
+    "name": "CarType",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "yearName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "hasProduction",
+            "fieldType": "Boolean",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "priceStart",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "priceEnd",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "hasPrice",
+            "fieldType": "Boolean",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "series",
+            "otherEntityRelationshipName": "carType",
+            "relationshipName": "series",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20191206044624",
+    "entityTableName": "car_type",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}
