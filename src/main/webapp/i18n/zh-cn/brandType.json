@@ -1,0 +1,23 @@
+{
+  "carbrandApp": {
+    "brandType": {
+      "home": {
+        "title": "Brand Types",
+        "createLabel": "创建新 Brand Type",
+        "createOrEditLabel": "创建或编辑 Brand Type",
+        "notFound": "No Brand Types found"
+      },
+      "created": "Brand Type {{ param }} 创建成功",
+      "updated": "Brand Type {{ param }} 更新成功",
+      "deleted": "Brand Type {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Brand Type {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Brand Type"
+      },
+      "name": "Name",
+      "brand": "Brand"
+    }
+  }
+}
