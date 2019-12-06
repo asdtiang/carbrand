@@ -1,0 +1,53 @@
+{
+    "name": "Series",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "priceStart",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "priceEnd",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "hasPrice",
+            "fieldType": "Boolean",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "brand",
+            "otherEntityRelationshipName": "series",
+            "relationshipName": "brand",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "brandType",
+            "otherEntityRelationshipName": "series",
+            "relationshipName": "brandType",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20191206044626",
+    "entityTableName": "series",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

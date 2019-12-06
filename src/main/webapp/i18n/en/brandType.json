@@ -1,0 +1,23 @@
+{
+  "carbrandApp": {
+    "brandType": {
+      "home": {
+        "title": "Brand Types",
+        "createLabel": "Create a new Brand Type",
+        "createOrEditLabel": "Create or edit a Brand Type",
+        "notFound": "No Brand Types found"
+      },
+      "created": "A new Brand Type is created with identifier {{ param }}",
+      "updated": "A Brand Type is updated with identifier {{ param }}",
+      "deleted": "A Brand Type is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Brand Type {{ id }}?"
+      },
+      "detail": {
+        "title": "Brand Type"
+      },
+      "name": "Name",
+      "brand": "Brand"
+    }
+  }
+}

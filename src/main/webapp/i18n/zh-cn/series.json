@@ -1,0 +1,27 @@
+{
+  "carbrandApp": {
+    "series": {
+      "home": {
+        "title": "Series",
+        "createLabel": "创建新 Series",
+        "createOrEditLabel": "创建或编辑 Series",
+        "notFound": "No Series found"
+      },
+      "created": "Series {{ param }} 创建成功",
+      "updated": "Series {{ param }} 更新成功",
+      "deleted": "Series {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Series {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Series"
+      },
+      "name": "Name",
+      "priceStart": "Price Start",
+      "priceEnd": "Price End",
+      "hasPrice": "Has Price",
+      "brand": "Brand",
+      "brandType": "Brand Type"
+    }
+  }
+}
