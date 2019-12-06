@@ -1,0 +1,46 @@
+
+
+entity Brand {
+    name String required
+    firstLetter String required
+    img String required
+}
+entity BrandType {
+    name String required
+}
+
+entity Series {
+    name String required
+    priceStart BigDecimal 
+    priceEnd BigDecimal 
+    hasPrice Boolean required 
+}
+
+entity CarType {
+    name String required
+    yearName String required
+    hasProduction Boolean required
+    priceStart BigDecimal 
+    priceEnd BigDecimal 
+    hasPrice Boolean required 
+}
+
+relationship ManyToOne {
+	BrandType{brand} to Brand
+    Series{brand} to Brand
+    Series{brandType} to BrandType
+    CarType{series} to Series
+
+}
+
+// Set pagination options
+paginate Brand,BrandType, Series,CarType with pagination
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
